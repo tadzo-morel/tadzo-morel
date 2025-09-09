@@ -1,5 +1,6 @@
-<h1 align="center">Salut 👋, moi c’est **Tadzo Morel**</h1>
+<h1 align="center">Salut 👋, moi c’est ** Tadzo Morel **</h1>
 
+\
 <p align="center">
   Développeur backend passionné, je construis des applications robustes avec <strong>Java</strong> (Spring Boot) et parfois <strong>PHP</strong>, pour la gestion bancaire, hospitalière, de stocks, etc.
 </p>
