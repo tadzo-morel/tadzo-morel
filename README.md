@@ -2,7 +2,7 @@
 
 \
 <p align="center">
-  Développeur backend passionné, je construis des applications  avec <strong>Java</strong> (Spring Boot) et parfois <strong>PHP</strong>, pour la gestion bancaire, restaurant, de stocks, etc.
+  Développeur backend passionné, je construis des applications  avec <strong>Java</strong> (Spring Boot) , pour la gestion bancaire, restaurant, de stocks, etc.
 </p>
 
 ---
@@ -48,7 +48,7 @@
 - **GestionDesproduits** – Application Java (MVC) de gestion de produits.
 - **GestionHopital2** – Système de gestion hospitalière en Java.
 - **gestion_resto** – Gestion de restaurant en Java.
-  Nb: il se peut qu'il y est des modifications
+-  Nb: il se peut qu'il y est des modifications
 
 ---
 
@@ -67,7 +67,7 @@
 Tu souhaites collaborer ou discuter d’un projet ?  
 - **Email** : moreltadzo@gmail.com  
 - **GitHub** : [tadzo-morel](https://github.com/tadzo-morel)  
-- **LinkedIn** *(à ajouter si disponible)*  
+- **LinkedIn**:https://www.linkedin.com/in/morel-aime-tadzo-9472012ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app  
 
 <p align="center">
   Merci de visiter mon profil ! 🌟
