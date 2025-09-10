@@ -54,7 +54,6 @@
 
 ##  En cours d’apprentissage
 
-- Docker & Kubernetes (conteneurs et orchestration)
 - Architecture microservices
 - Tests unitaires (JUnit, Mockito)
 - CI/CD (GitHub Actions)
