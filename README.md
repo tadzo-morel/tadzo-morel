@@ -61,8 +61,13 @@
 </p>
 
 ---
+## Mes Trophets
 <img src="https://github-profile-trophy.vercel.app/?username=tadzo-morel" alt="GitHub Trophies">
+---
+## Mes Statistiques de language Utiliser
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tadzo-morel&layout=compact" alt="Top Languages">
+
+---
 
 ##  Projets épinglés
 
