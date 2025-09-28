@@ -2,12 +2,12 @@
 
 \
 <p align="center">
-  Développeur backend passionné, je construis des applications  avec <strong>Java</strong> (Spring Boot) , pour la gestion bancaire, restaurant, de stocks, etc.
+  Développeur backend passionné, je construis des applications  avec <strong>Java</strong> (Spring Boot) , pour la gestion bancaire, restaurant, stocks, etc.
 </p>
 
 ---
 
-  ![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif) ![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif) |![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
   
 
   ---
