@@ -51,6 +51,7 @@
   <img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white" alt="Visual Studio"/>
   <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" alt="Eclipse"/>
 </p>
+
 ---
 
 ##  Statistiques GitHub
@@ -61,10 +62,15 @@
 </p>
 
 ---
+
 ## Mes Trophets
+
 <img src="https://github-profile-trophy.vercel.app/?username=tadzo-morel" alt="GitHub Trophies">
+
 ---
+
 ## Mes Statistiques de language Utiliser
+
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tadzo-morel&layout=compact" alt="Top Languages">
 
 ---
