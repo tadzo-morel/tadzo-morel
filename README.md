@@ -8,6 +8,7 @@
 ---
 
 ![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+![Serpent dynamique](https://media.giphy.com/media/12HZukMBlutpoQ/giphy.gif)
 
 
 <img src="https://github-profile-trophy.vercel.app/?username=tadzo-morel" alt="GitHub Trophies">
