@@ -6,6 +6,10 @@
 </p>
 
 ---
+![Snake animation](https://github.com/tadzo-morel/tadzo-morel/blob/output/github-contribution-grid-snake.svg)
+
+![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+
 
 <img src="https://github-profile-trophy.vercel.app/?username=tadzo-morel" alt="GitHub Trophies">
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tadzo-morel&layout=compact" alt="Top Languages">
