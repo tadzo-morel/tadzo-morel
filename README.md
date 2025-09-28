@@ -7,7 +7,9 @@
 
 ---
 
-![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Développeur qui code" />
+</p>
 
   ---
   
