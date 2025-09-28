@@ -63,8 +63,163 @@
 - Fluter,bootStrap,pyton,angula
 
 ---
-![Snake animation](https://github.com/tadzo-morel/tadzo-morel/blob/output/github-contribution-grid-snake.svg)
+package com.example.tonprojet; // Mets ici le nom de ton package
 
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Point;
+import android.view.MotionEvent;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class SnakeView extends SurfaceView implements Runnable {
+    private Thread thread;
+    private boolean isPlaying;
+    private Paint paint;
+    private ArrayList<Point> snake;
+    private Point food;
+    private int direction = 0; // 0=up, 1=right, 2=down, 3=left
+    private int blockSize = 50;
+    private int screenWidth, screenHeight;
+    private Random random;
+
+    public SnakeView(Context context) {
+        super(context);
+        getHolder().addCallback(new SurfaceHolder.Callback() {
+            @Override
+            public void surfaceCreated(SurfaceHolder holder) {
+                screenWidth = getWidth();
+                screenHeight = getHeight();
+            }
+            @Override public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {}
+            @Override public void surfaceDestroyed(SurfaceHolder holder) {}
+        });
+        paint = new Paint();
+        snake = new ArrayList<>();
+        snake.add(new Point(5, 5));
+        random = new Random();
+        spawnFood();
+    }
+
+    @Override
+    public void run() {
+        while (isPlaying) {
+            update();
+            draw();
+            control();
+        }
+    }
+
+    private void update() {
+        Point head = new Point(snake.get(0));
+        switch (direction) {
+            case 0: head.y -= 1; break;
+            case 1: head.x += 1; break;
+            case 2: head.y += 1; break;
+            case 3: head.x -= 1; break;
+        }
+
+        // Collision mur
+        if (head.x < 0 || head.x * blockSize >= screenWidth ||
+            head.y < 0 || head.y * blockSize >= screenHeight) {
+            resetGame();
+            return;
+        }
+
+        // Collision avec soi-même
+        for (Point p : snake) {
+            if (p.equals(head)) {
+                resetGame();
+                return;
+            }
+        }
+
+        snake.add(0, head);
+
+        // Mange la nourriture
+        if (head.equals(food)) {
+            spawnFood();
+        } else {
+            snake.remove(snake.size() - 1);
+        }
+    }
+
+    private void draw() {
+        if (getHolder().getSurface().isValid()) {
+            Canvas canvas = getHolder().lockCanvas();
+            canvas.drawColor(Color.BLACK);
+
+            paint.setColor(Color.GREEN);
+            for (Point p : snake) {
+                canvas.drawRect(p.x * blockSize, p.y * blockSize, (p.x + 1) * blockSize, (p.y + 1) * blockSize, paint);
+            }
+
+            paint.setColor(Color.RED);
+            canvas.drawRect(food.x * blockSize, food.y * blockSize, (food.x + 1) * blockSize, (food.y + 1) * blockSize, paint);
+
+            getHolder().unlockCanvasAndPost(canvas);
+        }
+    }
+
+    private void spawnFood() {
+        int maxX = screenWidth / blockSize;
+        int maxY = screenHeight / blockSize;
+        food = new Point(random.nextInt(maxX), random.nextInt(maxY));
+    }
+
+    private void resetGame() {
+        snake.clear();
+        snake.add(new Point(5, 5));
+        direction = 0;
+        spawnFood();
+    }
+
+    private void control() {
+        try {
+            Thread.sleep(150);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void pause() {
+        isPlaying = false;
+        try {
+            if (thread != null) thread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void resume() {
+        isPlaying = true;
+        thread = new Thread(this);
+        thread.start();
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            float x = event.getX();
+            float y = event.getY();
+            Point head = snake.get(0);
+
+            if (direction % 2 == 0) { // up ou down
+                if (x > head.x * blockSize) direction = 1;
+                else direction = 3;
+            } else { // right ou left
+                if (y > head.y * blockSize) direction = 2;
+                else direction = 0;
+            }
+        }
+        return true;
+    }
+}
 ##  Contact
 
 Tu souhaites collaborer ou discuter d’un projet ?  
