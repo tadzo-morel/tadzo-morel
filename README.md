@@ -7,7 +7,12 @@
 
 ---
 
-![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+  <p align="center">
+    ![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+  </p>  
+
+  ---
+  
 # snk
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/platane/platane/main.yml?label=action&style=flat-square)](https://github.com/Platane/Platane/actions/workflows/main.yml)
