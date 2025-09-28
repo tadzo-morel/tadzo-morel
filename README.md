@@ -7,9 +7,8 @@
 
 ---
 
-  <p align="center">
-    ![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
-  </p>  
+  ![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+  
 
   ---
   
