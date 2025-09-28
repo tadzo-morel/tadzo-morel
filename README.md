@@ -6,7 +6,6 @@
 </p>
 
 ---
-![Snake animation](https://github.com/tadzo-morel/tadzo-morel/blob/output/github-contribution-grid-snake.svg)
 
 ![Développeur qui code](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
 
@@ -64,6 +63,7 @@
 - Fluter,bootStrap,pyton,angula
 
 ---
+![Snake animation](https://github.com/tadzo-morel/tadzo-morel/blob/output/github-contribution-grid-snake.svg)
 
 ##  Contact
 
