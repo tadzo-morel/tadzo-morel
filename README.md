@@ -64,8 +64,7 @@
 
 ## Mes Trophets
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=tadzo-morel)](https://github.com/tadzo-morel/github-profile-trophy)
-
+[![trophy](https://github-profile-trophy.vercel.app/?username=tadzo-morel)](https://github.com/ryo-ma/github-profile-trophy)
 ---
 
 ## Mes Statistiques de language Utiliser
