@@ -64,7 +64,7 @@
 
 ## Mes Trophets
 
-<img src="https://github-profile-trophy.vercel.app/?username=tadzo-morel" alt="GitHub Trophies">
+[![trophy](https://github-profile-trophy.vercel.app/?username=tadzo-morel)](https://github.com/tadzo-morel/github-profile-trophy)
 
 ---
 
