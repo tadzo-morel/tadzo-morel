@@ -1,106 +1,70 @@
-<h1 align="center">Salut 👋, moi c’est ** Tadzo Morel **</h1>
+# 👋 Salut, je suis Tadzo Morel!
 
-\
-<p align="center">
-  Développeur backend passionné, je construis des applications  avec <strong>Java</strong> (Spring Boot) , pour la gestion bancaire, restaurant, stocks, etc.
-</p>
-
----
-
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Développeur qui code" />
-</p>
-
-  ---
+<div align="center">
   
-# snk
+## 🏆 Trophées GitHub
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-  <img
-    alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-</picture>
+[![trophy](https://github-profile-trophy.vercel.app/api/?username=tadzo-morel&theme=onedark&no-frame=false&no-bg=false&margin-w=4&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
 
 ---
 
-##  Technologies & outils
+## 📊 Statistiques GitHub
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot"/>
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"/>
-  <img src="https://img.shields.io/badge/MVC-000000?style=for-the-badge" alt="MVC"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/>
-   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
-  <img src="https://img.shields.io/badge/Haskell-5E5086?style=for-the-badge&logo=haskell&logoColor=white" alt="Haskell"/>
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C"/>
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
-  <img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white" alt="Visual Studio"/>
-  <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" alt="Eclipse"/>
-</p>
+<div align="center">
+  
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tadzo-morel&show_icons=true&theme=radical&hide_border=true&count_private=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=tadzo-morel&theme=radical&hide_border=true)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tadzo-morel&layout=compact&theme=radical&hide_border=true&langs_count=8)
+
+</div>
 
 ---
 
-##  Statistiques GitHub
+## 🎯 Activité GitHub
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=tadzo-morel&show_icons=true&theme=tokyonight" alt="GitHub Stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tadzo-morel&theme=tokyonight" alt="GitHub Streak"/>
-</p>
+<div align="center">
 
----
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=tadzo-morel&theme=react-dark&hide_border=true&area=true)
 
-## Mes Trophets
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=tadzo-morel)](https://github.com/ryo-ma/github-profile-trophy)
----
-
-## Mes Statistiques de language Utiliser
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tadzo-morel&layout=compact" alt="Top Languages">
+</div>
 
 ---
 
-##  Projets épinglés
+## 💻 Technologies & Outils
 
-- **etudiant** – Application de gestion d’étudiants (PHP).
-- **gestion_stock** – Gestion des stocks en Java (MVC).
-- **GestionCalculatriceBasique** – Calculatrice basique en Java.
-- **GestionDesproduits** – Application Java (MVC) de gestion de produits.
-- **GestionHopital2** – Système de gestion hospitalière en Java.
-- **gestion_resto** – Gestion de restaurant en Java.
--  Nb: il se peut qu'il y est des modifications
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+</div>
+
+---
+
+## 📫 Me contacter
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tadzo-morel)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/votre-profil)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:votre.email@example.com)
+
+</div>
 
 ---
 
-##  En cours d’apprentissage
+<div align="center">
+  
+### 💡 "Le code est de la poésie en mouvement"
 
-- Architecture microservices
-- Tests unitaires (JUnit, Mockito)
-- CI/CD (GitHub Actions)
-- Fluter,bootStrap,pyton,angula
+![Profile Views](https://komarev.com/ghpvc/?username=tadzo-morel&color=blueviolet&style=flat-square&label=Visiteurs+du+profil)
 
----
-    
-##  Contact
-
-Tu souhaites collaborer ou discuter d’un projet ?  
-- **Email** : moreltadzo@gmail.com  
-- **GitHub** : [tadzo-morel](https://github.com/tadzo-morel)  
-- **LinkedIn**:https://www.linkedin.com/in/morel-aime-tadzo-9472012ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app  
-
-<p align="center">
-  Merci de visiter mon profil ! 🌟
-</p>
+</div>
