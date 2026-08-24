@@ -2,7 +2,6 @@ name: Update GitHub Profile
 
 on:
   schedule:
-    # Exécution chaque jour à minuit UTC
     - cron: "0 0 * * *"
 
   workflow_dispatch:
@@ -19,7 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Configure Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -30,7 +29,8 @@ jobs:
           pip install requests
 
       - name: Create profile directory
-        run: mkdir -p profile
+        run: |
+          mkdir -p profile
 
       - name: Generate GitHub Stats
         uses: stats-organization/github-readme-stats-action@v2
@@ -73,7 +73,18 @@ jobs:
         run: |
           python scripts/generate_skills.py
 
-      - name: Commit generated profile cards
+      - name: Check generated files
+        run: |
+          echo "Generated files:"
+          ls -lh profile/
+
+          test -f profile/stats.svg
+          test -f profile/top-langs.svg
+          test -f profile/streak.svg
+          test -f profile/trophy.svg
+          test -f profile/skills.svg
+
+      - name: Commit generated cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
