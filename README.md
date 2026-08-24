@@ -77,25 +77,8 @@ Je travaille principalement avec **Java, Spring Boot, Angular et MySQL**, et je 
 
 Je m'intéresse notamment à :
 
-```text
-┌───────────────────────────────────────┐
-│              FRONTEND                 │
-│        Angular • TypeScript           │
-└──────────────────┬────────────────────┘
-                   │
-                   │ REST API
-                   ▼
-┌───────────────────────────────────────┐
-│              BACKEND                  │
-│       Java • Spring Boot              │
-│       MVC • Services • REST           │
-└──────────────────┬────────────────────┘
-                   │
-                   ▼
-┌───────────────────────────────────────┐
-│             DATABASE                  │
-│               MySQL                   │
-└───────────────────────────────────────┘
+```<img width="1333" height="728" alt="Capture d&#39;écran 2026-08-19 213625" src="https://github.com/user-attachments/assets/6e2c80ca-3e03-4b4f-9a4f-ce829acbc2f3" />
+
 ```
 
 Principes que je cherche à appliquer :
