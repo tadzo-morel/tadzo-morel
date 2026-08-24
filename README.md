@@ -141,16 +141,15 @@ Application permettant de gérer et consulter des biens immobiliers à travers u
 
 ---
 
-## 📊 Mes statistiques GitHub
+## 📊 Statistiques GitHub
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=tadzo-morel&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img src="./profile/stats.svg" alt="GitHub Statistics" width="495">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tadzo-morel&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+<img src="./profile/top-langs.svg" alt="Most Used Languages" width="330">
 
 </div>
-
 ---
 
 ## 🔥 GitHub Streak
