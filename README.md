@@ -122,28 +122,38 @@ Je m’intéresse notamment à :
 </p>
 
 ---
-
 ## 🚀 Projets
 
 ### 🏥 Application de gestion hospitalière
 
-Application Full-Stack destinée à faciliter la gestion des patients, médecins, rendez-vous et informations hospitalières.
+Application Full-Stack destinée à faciliter la gestion des patients, des médecins, des rendez-vous et des informations hospitalières.
 
 **Technologies :**
 
-`Java` `Spring Boot` `Angular` `MySQL` `Docker`
+```text
+Java · Spring Boot · Angular · MySQL · Docker
+```
+
+**Fonctionnalités principales :**
+
+- Gestion des patients.
+- Gestion des médecins.
+- Gestion des rendez-vous.
+- Gestion des informations hospitalières.
+- Exposition d’API REST.
+- Organisation du backend en couches.
 
 ---
 
 ### 🏫 Application de gestion scolaire
 
-Application permettant de gérer les étudiants, enseignants, classes, matières et différentes opérations administratives.
+Application permettant de gérer les étudiants, les enseignants, les classes, les matières et différentes opérations administratives.
 
 **Technologies :**
 
-`Java` `Spring Boot` `Angular` `MySQL`
-
----
+```text
+Java · Spring Boot · Angular · MySQL
+```
 
 ### 🏠 Gestion immobilière en ligne
 
