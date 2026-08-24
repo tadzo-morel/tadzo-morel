@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="544" viewBox="0 0 760 544">
+  <style>
+    .title { fill: #c9d1d9; font: 700 24px "Segoe UI", Arial, sans-serif; }
+    .label { fill: #c9d1d9; font: 600 16px "Segoe UI", Arial, sans-serif; }
+    .value { fill: #c9d1d9; font: 700 15px "Segoe UI", Arial, sans-serif; }
+    .subtitle { fill: #8b949e; font: 14px "Segoe UI", Arial, sans-serif; }
+  </style>
+
+  <rect width="100%" height="100%" rx="14" fill="#0d1117"/>
+  <text x="28" y="38" class="title">Progression technique</text>
+  <text x="28" y="62" class="subtitle">Auto-évaluation — mise à jour via GitHub Actions</text>
+
+  
+        <text x="28" y="55" class="label">Java / Spring Boot</text>
+        <rect x="250" y="34" width="400" height="18" rx="9" fill="#30363d"/>
+        <rect x="250" y="34" width="360" height="18" rx="9" fill="#f89820"/>
+        <text x="680" y="55" class="value">90%</text>
+        
+        <text x="28" y="113" class="label">Angular</text>
+        <rect x="250" y="92" width="400" height="18" rx="9" fill="#30363d"/>
+        <rect x="250" y="92" width="320" height="18" rx="9" fill="#dd0031"/>
+        <text x="680" y="113" class="value">80%</text>
+        
+        <text x="28" y="171" class="label">MySQL</text>
+        <rect x="250" y="150" width="400" height="18" rx="9" fill="#30363d"/>
+        <rect x="250" y="150" width="340" height="18" rx="9" fill="#4479a1"/>
+        <text x="680" y="171" class="value">85%</text>
+        
+        <text x="28" y="229" class="label">Git / GitHub</text>
+        <rect x="250" y="208" width="400" height="18" rx="9" fill="#30363d"/>
+        <rect x="250" y="208" width="360" height="18" rx="9" fill="#f05032"/>
+        <text x="680" y="229" class="value">90%</text>
+        
+        <text x="28" y="287" class="label">Docker</text>
+        <rect x="250" y="266" width="400" height="18" rx="9" fill="#30363d"/>
+        <rect x="250" y="266" width="280" height="18" rx="9" fill="#2496ed"/>
+        <text x="680" y="287" class="value">70%</text>
+        
+        <text x="28" y="345" class="label">Design Patterns</text>
+        <rect x="250" y="324" width="400" height="18" rx="9" fill="#30363d"/>
+        <rect x="250" y="324" width="240" height="18" rx="9" fill="#8b5cf6"/>
+        <text x="680" y="345" class="value">60%</text>
+        
+        <text x="28" y="403" class="label">Architecture</text>
+        <rect x="250" y="382" width="400" height="18" rx="9" fill="#30363d"/>
+        <rect x="250" y="382" width="240" height="18" rx="9" fill="#00add8"/>
+        <text x="680" y="403" class="value">60%</text>
+        
+        <text x="28" y="461" class="label">CI/CD</text>
+        <rect x="250" y="440" width="400" height="18" rx="9" fill="#30363d"/>
+        <rect x="250" y="440" width="180" height="18" rx="9" fill="#22c55e"/>
+        <text x="680" y="461" class="value">45%</text>
+        
+</svg>
