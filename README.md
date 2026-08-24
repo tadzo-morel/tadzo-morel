@@ -8,7 +8,7 @@
 
 Passionné par le développement logiciel et la conception d’applications modernes, je construis des solutions **robustes, maintenables et orientées utilisateurs**.
 
-Je travaille principalement avec **Java, Spring Boot, React, Angular, Flask , MySQL et postgres**. 
+Je travaille principalement avec **Java, Spring Boot, React, Angular, Flask, MySQL et postgres**. 
 Je m’intéresse particulièrement à l’architecture logicielle, aux API REST, au développement Full-Stack, à l’expérience utilisateur et aux bonnes pratiques de développement.
 
 ---
@@ -117,7 +117,7 @@ Je m’intéresse notamment à :
 <p align="center">
   <i>
     Flux d’une requête HTTP à travers les différentes couches de l’application :
-    Controller → Service → Repository → MySQL
+   Controller → Service → Repository → Base de données
   </i>
 </p>
 
@@ -217,7 +217,7 @@ Base de données
 - Connexion à une base de données.
 - Séparation entre la logique métier et l’interface utilisateur.
 
-> 🔗 Le lien vers ce projet sera ajouté prochainement.
+> 🔗 [Voir le projet React + Flask]( https://github.com/tadzo-morel/tadzo-morel.git)
 
 ---
 
@@ -333,14 +333,18 @@ API REST Spring Boot
 
 ## 🎯 Mes objectifs
 
-* 🚀 Approfondir **Spring Boot**
-* ⚡ Maîtriser **Angular**
-* 🧠 Renforcer mes connaissances en **Architecture Logicielle**
-* 🧩 Maîtriser davantage les **Design Patterns**
-* 🔄 Mettre en place des pipelines **CI/CD**
-* 🐳 Approfondir **Docker & DevOps**
-* 🤖 Explorer le développement assisté par **l'IA**
-* 🌍 Construire des solutions adaptées aux problématiques locales
+- 🚀 Approfondir **Spring Boot**.
+- ⚛️ Maîtriser **React et Vite**.
+- ⚡ Renforcer mes compétences en **Angular**.
+- 🐍 Approfondir le développement backend avec **Flask**.
+- 🧠 Renforcer mes connaissances en **architecture logicielle**.
+- 🧩 Maîtriser davantage les **Design Patterns**.
+- 🗄️ Approfondir **MySQL et PostgreSQL**.
+- 🔄 Mettre en place des pipelines **CI/CD**.
+- 🐳 Approfondir **Docker et DevOps**.
+- 🎨 Améliorer la conception d’interfaces avec **Figma**.
+- 🤖 Explorer le développement assisté par **l’intelligence artificielle**.
+- 🌍 Construire des solutions adaptées aux problématiques locales.
 
 ---
 
