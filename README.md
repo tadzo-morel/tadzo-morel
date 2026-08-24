@@ -191,19 +191,17 @@ Application permettant de gérer et consulter des biens immobiliers à travers u
 
 ---
 
-## 📚 Actuellement en apprentissage
+## 📚 Progression technique
 
-```text
-Java / Spring Boot     ████████████████████░░  90%
-Angular                █████████████████░░░░░  80%
-MySQL                  ███████████████████░░░  85%
-Git / GitHub            ████████████████████░░  90%
-Docker                  ███████████████░░░░░░░  70%
-Design Patterns         ████████████░░░░░░░░░░  60%
-Architecture            ████████████░░░░░░░░░░  60%
-CI/CD                   █████████░░░░░░░░░░░░░  45%
-```
+<p align="center">
+  <img
+    src="./profile/skills.svg"
+    alt="Progression technique basée sur l'activité GitHub"
+    width="700"
+  />
+</p>
 
+> Les indicateurs sont calculés automatiquement à partir de mon activité publique GitHub. Ils représentent une progression d'utilisation et non une certification officielle de compétence.
 > 📌 Les pourcentages représentent mes axes actuels de progression et non une mesure officielle de compétence.
 
 ---
