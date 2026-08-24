@@ -122,6 +122,7 @@ Je m’intéresse notamment à :
 </p>
 
 ---
+
 ## 🚀 Projets
 
 ### 🏥 Application de gestion hospitalière
@@ -175,16 +176,34 @@ Projet Full-Stack réalisé avec **React** pour l’interface utilisateur et **F
 React · JavaScript · Flask · Python · REST API
 ```
 
-**Architecture du projet :**
+**Fonctionnalités principales :**
 
+- Gestion des biens immobiliers.
+- Consultation des propriétés.
+- Gestion des informations des biens.
+- Communication avec une API REST.
+- Organisation du projet selon une architecture en couches.
+
+---
+
+### ⚛️ Application Full-Stack React et Flask
+
+Projet Full-Stack réalisé avec **React** pour l’interface utilisateur et **Flask** pour le backend.
+
+**Technologies :**
+
+```text
+React · JavaScript · Flask · Python · REST API
 ```
 
+**Architecture du projet :**
+
+```text
 React
   ↓
 API REST Flask
   ↓
 Base de données
-
 ```
 
 **Compétences mises en pratique :**
@@ -210,15 +229,13 @@ Le frontend est développé avec **React et Vite**, tandis que le backend repose
 
 **Technologies :**
 
-```
-
+```text
 React · Vite · Java · Spring Boot · MySQL · Figma · REST API
 ```
 
 **Architecture prévue :**
 
-```
-
+```text
 Maquettes Figma
       ↓
 React + Vite
@@ -226,7 +243,6 @@ React + Vite
 API REST Spring Boot
       ↓
     MySQL
-
 ```
 
 **Fonctionnalités prévues :**
