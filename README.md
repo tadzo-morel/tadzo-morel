@@ -193,15 +193,18 @@ Application permettant de gérer et consulter des biens immobiliers à travers u
 
 ## 📚 Progression technique
 
+
+
 <div align="center">
 
 <img
   src="./profile/skills.svg"
   alt="Progression technique"
-  width="760"
+  width="750"
 />
 
 </div>
+
 
 > Indicateurs de progression personnels, mis à jour via GitHub Actions.
 
