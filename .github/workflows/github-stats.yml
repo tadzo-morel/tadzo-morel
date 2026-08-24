@@ -66,5 +66,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore: update GitHub statistics"
+          git commit -m "chore: update GitHub profile cards"
           git push
