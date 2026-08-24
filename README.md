@@ -12,6 +12,7 @@ Je travaille principalement avec **Java, Spring Boot, React, Angular, Flask , My
 Je m’intéresse particulièrement à l’architecture logicielle, aux API REST, au développement Full-Stack, à l’expérience utilisateur et aux bonnes pratiques de développement.
 
 ---
+
 ## 🚀 À propos de moi
 
 - 🎓 Licence en **Développement d’Applications**.
