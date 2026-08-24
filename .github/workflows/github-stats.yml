@@ -43,6 +43,17 @@ jobs:
           timezone: Africa/Douala
           hide-border: true
 
+      - name: Generate GitHub Trophies
+        uses: ryo-ma/github-profile-trophy@master
+        with:
+          username: ${{ github.repository_owner }}
+          output_path: profile/trophy.svg
+          theme: tokyo-night
+          no-frame: true
+          no-bg: true
+          margin-w: 5
+          column: 7
+
       - name: Commit generated cards
         run: |
           git config user.name "github-actions[bot]"
