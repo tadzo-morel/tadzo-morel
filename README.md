@@ -156,10 +156,13 @@ Application permettant de gérer et consulter des biens immobiliers à travers u
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=tadzo-morel&theme=tokyonight&hide_border=true" />
+<img
+  src="./profile/streak.svg"
+  alt="GitHub contribution streak"
+  width="495"
+/>
 
 </div>
-
 ---
 
 ## 🏆 GitHub Trophies
