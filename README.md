@@ -150,6 +150,7 @@ Application permettant de gérer et consulter des biens immobiliers à travers u
 <img src="./profile/top-langs.svg" alt="Most Used Languages" width="330">
 
 </div>
+
 ---
 
 ## 🔥 GitHub Streak
@@ -163,6 +164,7 @@ Application permettant de gérer et consulter des biens immobiliers à travers u
 />
 
 </div>
+
 ---
 
 ## 🏆 GitHub Trophies
@@ -176,6 +178,7 @@ Application permettant de gérer et consulter des biens immobiliers à travers u
 />
 
 </div>
+
 ---
 
 ## 📈 Activité GitHub
