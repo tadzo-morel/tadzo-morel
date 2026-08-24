@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système d'Analyse de CV par IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin {
+            animation: spin 3s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen p-6"> # Background dégradé doux
+    <div id="app" class="max-w-7xl mx-auto"></div> 
+    <script>
+        const API_BASE_URL = 'http://localhost:5000';
+
+        let state = {
+            activeTab: 'dashboard',
+            stats: null,
+            loading: false,
+            cvText: '',
+            analysisResult: null
+        };
+
+        // Charger les statistiques
+        async function loadStats() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/stats`);
+                state.stats = await response.json();
+                render();
+            } catch (error) {
+                console.error('Erreur:', error);
+            }
+        }
+
+        // Analyser un CV
+        async function analyzeCV() {
+            if (!state.cvText.trim()) {
+                alert('Veuillez entrer un CV');
+                return;
+            }
+
+            state.loading = true;
+            render();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/analyze`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ cv_text: state.cvText })
+                });
+                
+                state.analysisResult = await response.json();
+                state.activeTab = 'results';
+            } catch (error) {
+                console.error('Erreur:', error);
+                alert('Erreur lors de l\'analyse du CV');
+            } finally {
+                state.loading = false;
+                render();
+            }
+        }
+
+        // Obtenir la couleur du score
+        function getScoreColor(score) {
+            if (score >= 80) return 'bg-green-500';
+            if (score >= 60) return 'bg-blue-500';
+            if (score >= 40) return 'bg-yellow-500';
+            return 'bg-red-500';
+        }
+
+        function getScoreBgColor(score) {
+            if (score >= 80) return 'bg-green-50 border-green-200';
+            if (score >= 60) return 'bg-blue-50 border-blue-200';
+            if (score >= 40) return 'bg-yellow-50 border-yellow-200';
+            return 'bg-red-50 border-red-200';
+        }
+
+        // Dashboard
+        function renderDashboard() {
+            if (!state.stats) return '<p class="text-center">Chargement...</p>';
+
+            return `
+                <div class="space-y-6">
+                    <!-- Hero Section -->
+                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-white">
+                        <h1 class="text-4xl font-bold mb-2">🎓 Système d'Analyse de CV par IA</h1>
+                        <p class="text-indigo-100 text-lg">TPE - Morel Tadzo | Niveau 3 Informatique</p>
+                        <p class="text-indigo-200 mt-2">Analysez et classez des CV automatiquement avec Machine Learning</p>
+                    </div>
+
+                    <!-- Stats Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-indigo-500">
+                            <p class="text-gray-500 text-sm font-medium">CV Analysés</p>
+                            <p class="text-3xl font-bold text-gray-800 mt-2">${state.stats.total_cvs}</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-purple-500">
+                            <p class="text-gray-500 text-sm font-medium">Catégories</p>
+                            <p class="text-3xl font-bold text-gray-800 mt-2">${state.stats.categories}</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500">
+                            <p class="text-gray-500 text-sm font-medium">Précision IA</p>
+                            <p class="text-3xl font-bold text-gray-800 mt-2">${state.stats.model_accuracy}%</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-orange-500">
+                            <p class="text-gray-500 text-sm font-medium">Algorithme</p>
+                            <p class="text-xl font-bold text-gray-800 mt-2">${state.stats.model_name}</p>
+                        </div>
+                    </div>
+
+                    <!-- Top Categories -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">📊 Top 5 Catégories</h3>
+                            <div class="space-y-3">
+                                ${state.stats.top_categories.slice(0, 5).map(cat => `
+                                    <div class="space-y-1">
+                                        <div class="flex justify-between text-sm">
+                                            <span class="font-medium text-gray-700">${cat.name}</span>
+                                            <span class="text-gray-500">${cat.count} CV (${cat.percentage}%)</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-indigo-600 h-2 rounded-full" style="width: ${cat.percentage * 4}%"></div>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">🏆 Compétences les Plus Demandées</h3>
+                            <div class="grid grid-cols-2 gap-3">
+                                ${state.stats.top_skills.slice(0, 8).map(skill => `
+                                    <div class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg p-3 border border-purple-200">
+                                        <p class="font-semibold text-gray-800 capitalize">${skill.name}</p>
+                                        <p class="text-sm text-gray-600">${skill.count} CV</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <button onclick="changeTab('analyze')" class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-indigo-500 text-left">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">🔍 Analyser un CV</h3>
+                            <p class="text-gray-600">Obtenez une analyse détaillée avec score et catégorie</p>
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Analyze View
+        function renderAnalyze() {
+            const wordCount = state.cvText.split(/\s+/).filter(Boolean).length;
+            
+            return `
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">📝 Analyser un CV</h2>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Collez le texte du CV ici
+                                </label>
+                                <textarea
+                                    id="cvTextarea"
+                                    placeholder="Exemple: Senior Software Engineer with 5 years of experience in Python..."
+                                    rows="12"
+                                    class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                                >${state.cvText}</textarea>
+                                <p class="text-sm text-gray-500 mt-2">
+                                    ${state.cvText.length} caractères • ${wordCount} mots
+                                </p>
+                            </div>
+
+                            <button
+                                onclick="analyzeCV()"
+                                ${state.loading || !state.cvText.trim() ? 'disabled' : ''}
+                                class="w-full py-4 px-6 rounded-lg font-semibold text-white text-lg ${
+                                    state.loading || !state.cvText.trim()
+                                        ? 'bg-gray-400 cursor-not-allowed'
+                                        : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-lg'
+                                }"
+                            >
+                                ${state.loading ? '⏳ Analyse en cours...' : '⚡ Analyser le CV'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Results View
+        function renderResults() {
+            if (!state.analysisResult) return '';
+
+            const { prediction, skills, skills_count, experience_years, quality_score, word_count } = state.analysisResult;
+
+            return `
+                <div class="space-y-6">
+                    <!-- Score principal -->
+                    <div class="rounded-2xl p-8 border-2 ${getScoreBgColor(quality_score)}">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold text-gray-800 mb-2">✨ Résultats de l'Analyse</h2>
+                                <p class="text-gray-600">Analyse complète du CV avec Machine Learning</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-6xl font-bold ${quality_score >= 80 ? 'text-green-600' : quality_score >= 60 ? 'text-blue-600' : 'text-yellow-600'}">
+                                    ${quality_score}
+                                </div>
+                                <p class="text-gray-600 font-medium mt-2">Score de Qualité</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catégorie -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">🎯 Catégorie Prédite</h3>
+                        <div class="bg-indigo-50 rounded-lg p-4 border-2 border-indigo-200 mb-4">
+                            <p class="text-2xl font-bold text-indigo-900">${prediction.predicted_category}</p>
+                        </div>
+                        
+                        <h4 class="font-semibold text-gray-700 mb-3">Top 3 Prédictions :</h4>
+                        <div class="space-y-2">
+                            ${prediction.top_predictions.map((pred, idx) => `
+                                <div class="flex items-center gap-3">
+                                    <span class="text-2xl">${idx === 0 ? '🥇' : idx === 1 ? '🥈' : '🥉'}</span>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="font-medium text-gray-800">${pred.category}</span>
+                                            <span class="font-bold text-indigo-600">${pred.probability.toFixed(2)}%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="${getScoreColor(pred.probability)} h-2 rounded-full" style="width: ${pred.probability}%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Détails -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h4 class="font-semibold text-gray-700 mb-2">💼 Expérience</h4>
+                            <p class="text-3xl font-bold text-gray-800">${experience_years} ans</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h4 class="font-semibold text-gray-700 mb-2">🏆 Compétences</h4>
+                            <p class="text-3xl font-bold text-gray-800">${skills_count}</p>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h4 class="font-semibold text-gray-700 mb-2">📝 Mots</h4>
+                            <p class="text-3xl font-bold text-gray-800">${word_count}</p>
+                        </div>
+                    </div>
+
+                    ${skills.length > 0 ? `
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">✅ Compétences Identifiées (${skills.length})</h3>
+                            <div class="flex flex-wrap gap-2">
+                                ${skills.map(skill => `
+                                    <span class="px-4 py-2 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-full text-green-800 font-medium">
+                                        ${skill}
+                                    </span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
+
+                    <button onclick="resetAnalysis()" class="w-full py-3 px-6 bg-gray-200 hover:bg-gray-300 rounded-lg font-semibold text-gray-700">
+                        Analyser un autre CV
+                    </button>
+                </div>
+            `;
+        }
+
+        // Render principal
+        function render() {
+            const content = state.activeTab === 'dashboard' ? renderDashboard() :
+                           state.activeTab === 'analyze' ? renderAnalyze() :
+                           renderResults();
+
+            document.getElementById('app').innerHTML = `
+                <!-- Navigation -->
+                <div class="bg-white rounded-xl shadow-lg mb-6 p-2">
+                    <div class="flex gap-2">
+                        <button
+                            onclick="changeTab('dashboard')"
+                            class="flex-1 py-3 px-6 rounded-lg font-semibold ${
+                                state.activeTab === 'dashboard'
+                                    ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white'
+                                    : 'text-gray-600 hover:bg-gray-100'
+                            }"
+                        >
+                            📊 Dashboard
+                        </button>
+                        <button
+                            onclick="changeTab('analyze')"
+                            class="flex-1 py-3 px-6 rounded-lg font-semibold ${
+                                state.activeTab === 'analyze' || state.activeTab === 'results'
+                                    ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white'
+                                    : 'text-gray-600 hover:bg-gray-100'
+                            }"
+                        >
+                            🔍 Analyser
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                ${content}
+
+                <!-- Footer -->
+                <div class="mt-8 text-center text-gray-600 text-sm">
+                    <p>💡 Propulsé par Random Forest • Accuracy: ${state.stats ? state.stats.model_accuracy + '%' : '...'}</p>
+                    <p class="mt-1">TPE 2024-2025 • Morel Tadzo • Niveau 3 Informatique</p>
+                </div>
+            `;
+
+            // Rétablir la valeur du textarea après render
+            if (state.activeTab === 'analyze') {
+                const textarea = document.getElementById('cvTextarea');
+                if (textarea) {
+                    textarea.value = state.cvText;
+                    textarea.addEventListener('input', (e) => {
+                        state.cvText = e.target.value;
+                        render();
+                    });
+                }
+            }
+        }
+
+        // Functions globales
+        function changeTab(tab) {
+            state.activeTab = tab;
+            render();
+        }
+
+        function resetAnalysis() {
+            state.cvText = '';
+            state.analysisResult = null;
+            state.activeTab = 'analyze';
+            render();
+        }
+
+        // Initialisation
+        loadStats();
+        render();
+    </script>
+</body>
+</html>
