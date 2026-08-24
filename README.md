@@ -234,7 +234,7 @@ API REST Spring Boot
 - Validation des données.
 - Gestion centralisée des erreurs.
 
- ```
+---
 
 ## 📊 Statistiques GitHub
 
