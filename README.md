@@ -77,9 +77,22 @@ Je travaille principalement avec **Java, Spring Boot, Angular et MySQL**, et je 
 
 Je m'intéresse notamment à :
 
-```<img width="1333" height="728" alt="Capture d&#39;écran 2026-08-19 213625" src="https://github.com/user-attachments/assets/6e2c80ca-3e03-4b4f-9a4f-ce829acbc2f3" />
+## 🏗️ Architecture & Request Flow
 
-```
+<p align="center">
+  <img 
+    src="./assets/requests-flow.png" 
+    alt="Spring Boot Request Flow"
+    width="900"
+  />
+</p>
+
+<p align="center">
+  <i>
+    Flux d'une requête HTTP à travers les différentes couches de l'application :
+    Controller → Service → Repository → MySQL
+  </i>
+</p>
 
 Principes que je cherche à appliquer :
 
