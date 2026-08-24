@@ -6,12 +6,12 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
@@ -39,7 +39,7 @@ jobs:
           username: ${{ github.repository_owner }}
           token: ${{ secrets.GITHUB_TOKEN }}
           output-path: profile/streak.svg
-          theme: tokyo-night
+          theme: tokyonight
           timezone: Africa/Douala
           hide-border: true
 
@@ -48,11 +48,8 @@ jobs:
         with:
           username: ${{ github.repository_owner }}
           output_path: profile/trophy.svg
-          theme: tokyo-night
-          no-frame: true
-          no-bg: true
-          margin-w: 5
-          column: 7
+          token: ${{ secrets.GITHUB_TOKEN }}
+          theme: tokyonight
 
       - name: Commit generated cards
         run: |
