@@ -1,51 +1,231 @@
-# 👋 Salut, je suis Tadzo Morel!
-
 <div align="center">
-  
-## 🏆 Trophées GitHub
 
-[![trophy](https://github-profile-trophy.vercel.app/api/?username=tadzo-morel&theme=onedark&no-frame=false&no-bg=false&margin-w=4&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&pause=1200&color=00ADD8&center=true&vCenter=true&width=900&lines=👋+Salut%2C+je+suis+Tadzo+Morel;💻+Java+%7C+Spring+Boot+%7C+Angular;🚀+Développeur+Full-Stack+en+construction;🧠+Passionné+par+l'architecture+logicielle;🌍+Je+transforme+des+idées+en+solutions+digitales)](https://git.io/typing-svg)
+
+</div>
+
+### 💻 Software Developer | Java & Spring Boot | Angular | Full-Stack Development
+
+Passionné par le développement logiciel et la conception d'applications modernes, je construis des solutions **robustes, maintenables et orientées utilisateurs**.
+
+Je travaille principalement avec **Java, Spring Boot, Angular et MySQL**, et je m'intéresse particulièrement à l'architecture logicielle, aux API REST, au développement Full-Stack et aux bonnes pratiques de développement.
+
+---
+
+## 🚀 À propos de moi
+
+* 🎓 Licence en **Développement d'Applications**
+* 💻 Développeur **Java / Spring Boot & Angular**
+* 🔧 Expérience avec la conception d'**API REST**
+* 🗄️ Travail avec **MySQL** et bases de données relationnelles
+* 🐳 Utilisation de **Docker** pour la conteneurisation
+* 🔀 Gestion de versions avec **Git & GitHub**
+* 🧩 Intérêt pour l'architecture logicielle et les Design Patterns
+* 🚀 Actuellement en progression vers un profil **Full-Stack Developer**
+
+> 🎯 Mon objectif : concevoir des applications utiles, évolutives et adaptées aux besoins réels des utilisateurs.
+
+---
+
+## 🛠️ Technologies & Outils
+
+### Backend
+
+<div align="left">
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge\&logo=openjdk\&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge\&logo=springboot\&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge\&logo=spring\&logoColor=white)
+
+</div>
+
+### Frontend
+
+<div align="left">
+
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge\&logo=angular\&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+
+</div>
+
+### Base de données
+
+<div align="left">
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
+
+</div>
+
+### DevOps & Outils
+
+<div align="left">
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge\&logo=visualstudiocode\&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge\&logo=intellijidea\&logoColor=white)
 
 </div>
 
 ---
 
-## 📊 Statistiques GitHub
+## 🧑‍💻 Architecture & Concepts
+
+Je m'intéresse notamment à :
+
+```text
+┌───────────────────────────────────────┐
+│              FRONTEND                 │
+│        Angular • TypeScript           │
+└──────────────────┬────────────────────┘
+                   │
+                   │ REST API
+                   ▼
+┌───────────────────────────────────────┐
+│              BACKEND                  │
+│       Java • Spring Boot              │
+│       MVC • Services • REST           │
+└──────────────────┬────────────────────┘
+                   │
+                   ▼
+┌───────────────────────────────────────┐
+│             DATABASE                  │
+│               MySQL                   │
+└───────────────────────────────────────┘
+```
+
+Principes que je cherche à appliquer :
+
+* ✅ Architecture MVC
+* ✅ REST API
+* ✅ Séparation des responsabilités
+* ✅ Repository / Service / Controller
+* ✅ Validation des données
+* ✅ Gestion des exceptions
+* ✅ Clean Code
+* ✅ Design Patterns
+* ✅ Git Flow
+* ✅ Conteneurisation avec Docker
+
+---
+
+## 🚀 Projets
+
+### 🏥 Application de gestion hospitalière
+
+Application Full-Stack destinée à faciliter la gestion des patients, médecins, rendez-vous et informations hospitalières.
+
+**Technologies :**
+
+`Java` `Spring Boot` `Angular` `MySQL` `Docker`
+
+---
+
+### 🏫 Application de gestion scolaire
+
+Application permettant de gérer les étudiants, enseignants, classes, matières et différentes opérations administratives.
+
+**Technologies :**
+
+`Java` `Spring Boot` `Angular` `MySQL`
+
+---
+
+### 🏠 Gestion immobilière en ligne
+
+Application permettant de gérer et consulter des biens immobiliers à travers une plateforme web.
+
+**Technologies :**
+
+`Spring Boot` `Angular` `MySQL` `REST API`
+
+---
+
+## 📊 Mes statistiques GitHub
 
 <div align="center">
-  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tadzo-morel&show_icons=true&theme=radical&hide_border=true&count_private=true)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=tadzo-morel&theme=radical&hide_border=true)
+<img src="https://github-readme-stats.vercel.app/api?username=tadzo-morel&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tadzo-morel&layout=compact&theme=radical&hide_border=true&langs_count=8)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tadzo-morel&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 
 </div>
 
 ---
 
-## 🎯 Activité GitHub
+## 🔥 GitHub Streak
 
 <div align="center">
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=tadzo-morel&theme=react-dark&hide_border=true&area=true)
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=tadzo-morel&theme=tokyonight&hide_border=true" />
 
 </div>
 
 ---
 
-## 💻 Technologies & Outils
+## 🏆 GitHub Trophies
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+<img src="https://github-profile-trophy.vercel.app/?username=tadzo-morel&theme=tokyonight&no-frame=true&no-bg=true&margin-w=5&column=7" />
 
 </div>
+
+---
+
+## 📈 Activité GitHub
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=tadzo-morel&theme=tokyo-night&hide_border=true&area=true" />
+
+</div>
+
+---
+
+## 📚 Actuellement en apprentissage
+
+```text
+Java / Spring Boot     ████████████████████░░  90%
+Angular                █████████████████░░░░░  80%
+MySQL                  ███████████████████░░░  85%
+Git / GitHub            ████████████████████░░  90%
+Docker                  ███████████████░░░░░░░  70%
+Design Patterns         ████████████░░░░░░░░░░  60%
+Architecture            ████████████░░░░░░░░░░  60%
+CI/CD                   █████████░░░░░░░░░░░░░  45%
+```
+
+> 📌 Les pourcentages représentent mes axes actuels de progression et non une mesure officielle de compétence.
+
+---
+
+## 🎯 Mes objectifs
+
+* 🚀 Approfondir **Spring Boot**
+* ⚡ Maîtriser **Angular**
+* 🧠 Renforcer mes connaissances en **Architecture Logicielle**
+* 🧩 Maîtriser davantage les **Design Patterns**
+* 🔄 Mettre en place des pipelines **CI/CD**
+* 🐳 Approfondir **Docker & DevOps**
+* 🤖 Explorer le développement assisté par **l'IA**
+* 🌍 Construire des solutions adaptées aux problématiques locales
+
+---
+
+## 🤝 Collaborons
+
+Je suis ouvert aux :
+
+* 💡 Projets innovants
+* 🤝 Collaborations Open Source
+* 🚀 Projets Full-Stack
+* 📚 Échanges autour du développement logiciel
+* 💼 Opportunités professionnelles
 
 ---
 
@@ -53,18 +233,22 @@
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tadzo-morel)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/votre-profil)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:votre.email@example.com)
+<a href="https://github.com/tadzo-morel">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
 </div>
 
 ---
 
 <div align="center">
-  
-### 💡 "Le code est de la poésie en mouvement"
 
-![Profile Views](https://komarev.com/ghpvc/?username=tadzo-morel&color=blueviolet&style=flat-square&label=Visiteurs+du+profil)
+### 💡 « Construire. Apprendre. Améliorer. Recommencer. »
+
+![Profile Views](https://komarev.com/ghpvc/?username=tadzo-morel\&color=blue\&style=flat-square\&label=Profile+Views)
 
 </div>
