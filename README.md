@@ -302,19 +302,7 @@ API REST Spring Boot
 
 ---
 
-## 📈 Activité GitHub
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=tadzo-morel&theme=tokyo-night&hide_border=true&area=true" />
-
-</div>
-
----
-
 ## 📚 Progression technique
-
-
 
 <div align="center">
 
